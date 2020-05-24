@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		040F2AEF24786B9C00E46E50 /* PDPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F2AEE24786B9C00E46E50 /* PDPlayer.swift */; };
 		040F2AF124786BB900E46E50 /* PDPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040F2AF024786BB900E46E50 /* PDPlayer.xib */; };
+		045EF5BD247AC1160096E983 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EF5BC247AC1160096E983 /* UIDevice+Extension.swift */; };
 		04617A4824770F140054320C /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04617A4724770F140054320C /* PlayerViewController.swift */; };
 		04617A4A247713790054320C /* SandBoxHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04617A49247713780054320C /* SandBoxHandler.swift */; };
 		046EF01E2475812C00125860 /* UIImageView+Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EF01D2475812C00125860 /* UIImageView+Downloader.swift */; };
@@ -35,19 +36,12 @@
 /* Begin PBXFileReference section */
 		040F2AEE24786B9C00E46E50 /* PDPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDPlayer.swift; sourceTree = "<group>"; };
 		040F2AF024786BB900E46E50 /* PDPlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDPlayer.xib; sourceTree = "<group>"; };
-		040F2AF324786C3000E46E50 /* MoviePlayer_Full@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoviePlayer_Full@2x.png"; sourceTree = "<group>"; };
-		040F2AF424786C3000E46E50 /* Player_后退@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_后退@2x.png"; sourceTree = "<group>"; };
-		040F2AF524786C3000E46E50 /* MoviePlayer_Stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoviePlayer_Stop@2x.png"; sourceTree = "<group>"; };
-		040F2AF624786C3000E46E50 /* MoviePlayer_Play_Big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoviePlayer_Play_Big@2x.png"; sourceTree = "<group>"; };
-		040F2AF724786C3000E46E50 /* MoviePlayer_小屏@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoviePlayer_小屏@2x.png"; sourceTree = "<group>"; };
-		040F2AF824786C3000E46E50 /* MoviePlayer_Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoviePlayer_Play@2x.png"; sourceTree = "<group>"; };
-		040F2AF924786C3000E46E50 /* MoviePlayer_Stop_Big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoviePlayer_Stop_Big@2x.png"; sourceTree = "<group>"; };
-		040F2AFA24786C3000E46E50 /* MoviePlayer_Slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoviePlayer_Slider@2x.png"; sourceTree = "<group>"; };
+		045EF5BC247AC1160096E983 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		04617A4724770F140054320C /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		04617A49247713780054320C /* SandBoxHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBoxHandler.swift; sourceTree = "<group>"; };
 		046EF01D2475812C00125860 /* UIImageView+Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Downloader.swift"; sourceTree = "<group>"; };
 		046EF01F2475AC1200125860 /* ImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
-		046EF0222475BEF700125860 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = ../placeholder.png; sourceTree = "<group>"; };
+		046EF0222475BEF700125860 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		04892672246B3FC300A1CBB9 /* NetworkingLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04892675246B3FC300A1CBB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04892677246B3FC300A1CBB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,26 +82,10 @@
 			path = PDPlayer;
 			sourceTree = "<group>";
 		};
-		040F2AF224786C3000E46E50 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-				046EF0222475BEF700125860 /* placeholder.png */,
-				040F2AF324786C3000E46E50 /* MoviePlayer_Full@2x.png */,
-				040F2AF424786C3000E46E50 /* Player_后退@2x.png */,
-				040F2AF524786C3000E46E50 /* MoviePlayer_Stop@2x.png */,
-				040F2AF624786C3000E46E50 /* MoviePlayer_Play_Big@2x.png */,
-				040F2AF724786C3000E46E50 /* MoviePlayer_小屏@2x.png */,
-				040F2AF824786C3000E46E50 /* MoviePlayer_Play@2x.png */,
-				040F2AF924786C3000E46E50 /* MoviePlayer_Stop_Big@2x.png */,
-				040F2AFA24786C3000E46E50 /* MoviePlayer_Slider@2x.png */,
-			);
-			path = Image;
-			sourceTree = "<group>";
-		};
 		046EF0212475BEE800125860 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				040F2AF224786C3000E46E50 /* Image */,
+				046EF0222475BEF700125860 /* placeholder.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -178,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				046EF01D2475812C00125860 /* UIImageView+Downloader.swift */,
+				045EF5BC247AC1160096E983 /* UIDevice+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -311,6 +290,7 @@
 				0489269D246B538C00A1CBB9 /* URLEncoder.swift in Sources */,
 				04F56B83246CAB9800F2B52C /* AlbumServiceManager.swift in Sources */,
 				04892676246B3FC300A1CBB9 /* AppDelegate.swift in Sources */,
+				045EF5BD247AC1160096E983 /* UIDevice+Extension.swift in Sources */,
 				046EF01E2475812C00125860 /* UIImageView+Downloader.swift in Sources */,
 				040F2AEF24786B9C00E46E50 /* PDPlayer.swift in Sources */,
 				04892693246B41A200A1CBB9 /* HTTPNetworkRoute.swift in Sources */,

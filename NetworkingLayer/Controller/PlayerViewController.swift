@@ -10,15 +10,30 @@ import UIKit
 import AVKit
 import AVFoundation
 
+public let ScreenWidth = UIScreen.main.bounds.width
+public let ScreenHeight = UIScreen.main.bounds.height
+var layer: PDPlayer!
+
 class PlayerViewController: UIViewController {
     
     var filePath: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.orange;
         
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(dismissVC));
+        self.navigationController?.navigationBar.isTranslucent = true;
         
+        layer = PDPlayer(frame: CGRect(x:30, y: 100, width: ScreenWidth - 60, height: 200), superVC: self);
+        layer.fileURL = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!;
+        view.addSubview(layer);
         
+    }
+    
+    @objc func dismissVC() {
+        layer.removeObserver();
+        self.dismiss(animated: true, completion: nil);
     }
     
     func setupUI(){
@@ -27,7 +42,6 @@ class PlayerViewController: UIViewController {
         button.setImage(UIImage(systemName: "pencil.circle"), for: .selected);
         button.adjustsImageWhenHighlighted = false;
         view.addSubview(button);
-        button.addTarget(self, action: #selector(play(sender:)), for: .touchUpInside)
         
         button.translatesAutoresizingMaskIntoConstraints = false;
         NSLayoutConstraint.activate([
@@ -68,9 +82,6 @@ class PlayerViewController: UIViewController {
         //        vc.didMove(toParent: self)
 
     }
-    
-    @objc func play(sender: UIButton) {
-        sender.isSelected = !sender.isSelected
-    }
+
 }
 

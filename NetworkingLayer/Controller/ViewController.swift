@@ -103,11 +103,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let vc = PlayerViewController();
         vc.filePath = album.previewURL;
         
-//        let player = AVPlayer(url: URL(string: "https://s3.amazonaws.com/media.jeunesseglobal.com/DEV/Training/171124_E1_HD_012.mp4")!);
-//        let vc = AVPlayerViewController()
-//        vc.player = player
-//        player.play();
-        present(vc, animated: true, completion: nil);
+        present(UINavigationController(rootViewController: vc), animated: true, completion: nil);
     }
     
 }
