@@ -13,6 +13,7 @@ import AVFoundation
 public let ScreenWidth = UIScreen.main.bounds.width
 public let ScreenHeight = UIScreen.main.bounds.height
 var layer: PDPlayer!
+var appDelegate = UIApplication.shared.delegate as! AppDelegate
 
 class PlayerViewController: UIViewController {
     
@@ -24,6 +25,8 @@ class PlayerViewController: UIViewController {
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(dismissVC));
         self.navigationController?.navigationBar.isTranslucent = true;
+        
+        appDelegate.allowRotation = true;
         
         layer = PDPlayer(frame: CGRect(x:30, y: 100, width: ScreenWidth - 60, height: 200), superVC: self);
         layer.fileURL = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!;
