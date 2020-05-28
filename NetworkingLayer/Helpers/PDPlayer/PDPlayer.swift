@@ -218,7 +218,7 @@ class PDPlayer: UIView {
         playTimeObserver = self.player.addPeriodicTimeObserver(forInterval: CMTimeMake(value: 1, timescale: 30), queue: DispatchQueue.main, using: { (time: CMTime) in
             
             let currentPlayTime = Float(self.playerItem.currentTime().value)/Float(self.playerItem.currentTime().timescale);
-            print(currentPlayTime);
+//            print(currentPlayTime);
             self.progressSlider.value = currentPlayTime;
             self.currentTimeLabel.text = self.convertTime(second: TimeInterval(currentPlayTime))
         })

@@ -14,6 +14,7 @@ public let ScreenWidth = UIScreen.main.bounds.width
 public let ScreenHeight = UIScreen.main.bounds.height
 var layer: PDPlayer!
 var appDelegate = UIApplication.shared.delegate as! AppDelegate
+var imageV: UIImageView!
 
 class PlayerViewController: UIViewController {
     
@@ -21,23 +22,24 @@ class PlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.orange;
-        
+    
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(dismissVC));
         self.navigationController?.navigationBar.isTranslucent = true;
-        
+        self.view.backgroundColor = UIColor.lightGray;
         appDelegate.allowRotation = true;
         
         layer = PDPlayer(frame: CGRect(x:30, y: 100, width: ScreenWidth - 60, height: 200), superVC: self);
         layer.fileURL = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!;
         view.addSubview(layer);
-        
+    
     }
+
     
     @objc func dismissVC() {
         layer.removeObserver();
         self.dismiss(animated: true, completion: nil);
     }
+    
     
     func setupUI(){
         let button = UIButton(type: .custom)
@@ -88,3 +90,48 @@ class PlayerViewController: UIViewController {
 
 }
 
+extension PlayerViewController {
+    func test(){
+           
+        //        print(DateHandler.localeDateString(date: Date(), dateStyle: DateFormatter.Style.long, timeStyle: DateFormatter.Style.long));
+        //
+        //        let mutable = NSMutableAttributedString(string: "Persistance leads to Success!");
+        //        let label = UILabel(frame: CGRect(x: 100, y: 500, width: 280, height: 30));
+        //        label.textColor = UIColor.orange;
+        //        label.attributedText = mutable.attriString(target: "leads", fontSize: 20, forgroundColor: UIColor.red, backgroundColor: UIColor.blue);
+        //        view.addSubview(label);
+                
+        //        let image = UIImage.createColorImage(with: UIColor.randomColor());
+                
+        //        let image = UIImage(named: "placeholder.png");
+        //        imageV = UIImageView(image: image);
+        //        view.addSubview(imageV);
+        //
+        //
+        //        imageV.translatesAutoresizingMaskIntoConstraints = false;
+        //
+        //        NSLayoutConstraint.activate([
+        //            imageV.widthAnchor.constraint(equalToConstant: 100),
+        //            imageV.heightAnchor.constraint(equalToConstant:80),
+        //            imageV.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+        //            imageV.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 100)
+        //        ])
+        
+//          self.view.backgroundColor = UIColor.randomColor();
+//                print(UIDevice.current.identifierForVendor!.uuidString);
+                
+        //        print(UIImage.takeScreenshot()?.size);
+        //        var string = "commond ata stor age.googleapis.com"
+        //        let range = Range.init(NSRange(location: 4, length: 4));
+        //        string.substring(with: range);
+                
+        //        let index = string.firstIndex(of:"g")
+        //        print(string.prefix(upTo: string.lastIndex(of:"a")!))
+        //        print(string.trimmingCharacters(in: .whitespaces));
+                
+//                let image = UIImage(named: "bird");
+//
+//                imageV.image = image?.blur();
+                
+    }
+}

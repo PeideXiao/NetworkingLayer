@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,6 @@
 		045EF5BD247AC1160096E983 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EF5BC247AC1160096E983 /* UIDevice+Extension.swift */; };
 		04617A4824770F140054320C /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04617A4724770F140054320C /* PlayerViewController.swift */; };
 		04617A4A247713790054320C /* SandBoxHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04617A49247713780054320C /* SandBoxHandler.swift */; };
-		046EF01E2475812C00125860 /* UIImageView+Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EF01D2475812C00125860 /* UIImageView+Downloader.swift */; };
 		046EF0202475AC1300125860 /* ImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EF01F2475AC1200125860 /* ImageOperation.swift */; };
 		046EF0232475BEF700125860 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EF0222475BEF700125860 /* placeholder.png */; };
 		04892676246B3FC300A1CBB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892675246B3FC300A1CBB9 /* AppDelegate.swift */; };
@@ -27,6 +26,12 @@
 		04892699246B442B00A1CBB9 /* HTTPNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892698246B442B00A1CBB9 /* HTTPNetworkRequest.swift */; };
 		0489269B246B518E00A1CBB9 /* HTTPNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489269A246B518E00A1CBB9 /* HTTPNetworkResponse.swift */; };
 		0489269D246B538C00A1CBB9 /* URLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489269C246B538C00A1CBB9 /* URLEncoder.swift */; };
+		04D13353247D62AD008BCF74 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D13352247D62AD008BCF74 /* UIColor+Extension.swift */; };
+		04D13359247D89E8008BCF74 /* DateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D13358247D89E8008BCF74 /* DateHandler.swift */; };
+		04D1335C247DA2C5008BCF74 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1335B247DA2C5008BCF74 /* String+Extension.swift */; };
+		04D1335E247DB52F008BCF74 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1335D247DB52F008BCF74 /* NSMutableAttributedString+Extension.swift */; };
+		04D13360247DBF6B008BCF74 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1335F247DBF6B008BCF74 /* UIImage+Extension.swift */; };
+		04D13362247DE6C0008BCF74 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D13361247DE6C0008BCF74 /* UIView+Extension.swift */; };
 		04F56B7F246C956F00F2B52C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F56B7E246C956F00F2B52C /* User.swift */; };
 		04F56B81246C978900F2B52C /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F56B80246C978900F2B52C /* AlbumService.swift */; };
 		04F56B83246CAB9800F2B52C /* AlbumServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F56B82246CAB9800F2B52C /* AlbumServiceManager.swift */; };
@@ -40,7 +45,6 @@
 		045EF5BC247AC1160096E983 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		04617A4724770F140054320C /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		04617A49247713780054320C /* SandBoxHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBoxHandler.swift; sourceTree = "<group>"; };
-		046EF01D2475812C00125860 /* UIImageView+Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Downloader.swift"; sourceTree = "<group>"; };
 		046EF01F2475AC1200125860 /* ImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
 		046EF0222475BEF700125860 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		04892672246B3FC300A1CBB9 /* NetworkingLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +61,12 @@
 		04892698246B442B00A1CBB9 /* HTTPNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkRequest.swift; sourceTree = "<group>"; };
 		0489269A246B518E00A1CBB9 /* HTTPNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkResponse.swift; sourceTree = "<group>"; };
 		0489269C246B538C00A1CBB9 /* URLEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoder.swift; sourceTree = "<group>"; };
+		04D13352247D62AD008BCF74 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		04D13358247D89E8008BCF74 /* DateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHandler.swift; sourceTree = "<group>"; };
+		04D1335B247DA2C5008BCF74 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		04D1335D247DB52F008BCF74 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		04D1335F247DBF6B008BCF74 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		04D13361247DE6C0008BCF74 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		04F56B7E246C956F00F2B52C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04F56B80246C978900F2B52C /* AlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
 		04F56B82246CAB9800F2B52C /* AlbumServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumServiceManager.swift; sourceTree = "<group>"; };
@@ -154,7 +164,6 @@
 			children = (
 				040F2AED24786B7400E46E50 /* PDPlayer */,
 				046EF01F2475AC1200125860 /* ImageOperation.swift */,
-				04617A49247713780054320C /* SandBoxHandler.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -162,8 +171,14 @@
 		0489268C246B406300A1CBB9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				046EF01D2475812C00125860 /* UIImageView+Downloader.swift */,
 				045EF5BC247AC1160096E983 /* UIDevice+Extension.swift */,
+				04D13352247D62AD008BCF74 /* UIColor+Extension.swift */,
+				04D13358247D89E8008BCF74 /* DateHandler.swift */,
+				04617A49247713780054320C /* SandBoxHandler.swift */,
+				04D1335B247DA2C5008BCF74 /* String+Extension.swift */,
+				04D1335D247DB52F008BCF74 /* NSMutableAttributedString+Extension.swift */,
+				04D1335F247DBF6B008BCF74 /* UIImage+Extension.swift */,
+				04D13361247DE6C0008BCF74 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,7 +245,6 @@
 				94878187F53089FF9A9B6AC0 /* Pods-NetworkingLayer.debug.xcconfig */,
 				B22C553D22E4BD478DAD7A13 /* Pods-NetworkingLayer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -352,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F56B85246CB58B00F2B52C /* Album.swift in Sources */,
+				04D1335C247DA2C5008BCF74 /* String+Extension.swift in Sources */,
 				04617A4824770F140054320C /* PlayerViewController.swift in Sources */,
 				04892699246B442B00A1CBB9 /* HTTPNetworkRequest.swift in Sources */,
 				0489267A246B3FC300A1CBB9 /* ViewController.swift in Sources */,
@@ -359,17 +374,21 @@
 				0489269D246B538C00A1CBB9 /* URLEncoder.swift in Sources */,
 				04F56B83246CAB9800F2B52C /* AlbumServiceManager.swift in Sources */,
 				04892676246B3FC300A1CBB9 /* AppDelegate.swift in Sources */,
+				04D13360247DBF6B008BCF74 /* UIImage+Extension.swift in Sources */,
 				045EF5BD247AC1160096E983 /* UIDevice+Extension.swift in Sources */,
-				046EF01E2475812C00125860 /* UIImageView+Downloader.swift in Sources */,
 				040F2AEF24786B9C00E46E50 /* PDPlayer.swift in Sources */,
 				04892693246B41A200A1CBB9 /* HTTPNetworkRoute.swift in Sources */,
 				0489269B246B518E00A1CBB9 /* HTTPNetworkResponse.swift in Sources */,
+				04D1335E247DB52F008BCF74 /* NSMutableAttributedString+Extension.swift in Sources */,
 				046EF0202475AC1300125860 /* ImageOperation.swift in Sources */,
+				04D13359247D89E8008BCF74 /* DateHandler.swift in Sources */,
 				04892695246B423900A1CBB9 /* HTTPMethod.swift in Sources */,
+				04D13362247DE6C0008BCF74 /* UIView+Extension.swift in Sources */,
 				04F56B7F246C956F00F2B52C /* User.swift in Sources */,
 				04892678246B3FC300A1CBB9 /* SceneDelegate.swift in Sources */,
 				04F56B81246C978900F2B52C /* AlbumService.swift in Sources */,
 				04617A4A247713790054320C /* SandBoxHandler.swift in Sources */,
+				04D13353247D62AD008BCF74 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

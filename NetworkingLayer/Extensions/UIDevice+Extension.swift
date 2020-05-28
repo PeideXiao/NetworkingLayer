@@ -11,12 +11,12 @@ import UIKit
 
 extension UIDevice {
     
-//    static func setOrientation(orientation: UIInterfaceOrientation) {
-//
-//        let sel = Selector("setOrientation");
-//
-//    }
-//
-    
+   // get device's uuid
+    static func UUID() -> String? {
+        if let uuid =  self.current.identifierForVendor {
+            return uuid.uuidString;
+        }
+        return nil;
+    }
     
 }
