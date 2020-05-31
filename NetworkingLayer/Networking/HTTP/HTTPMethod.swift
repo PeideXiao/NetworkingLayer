@@ -8,6 +8,9 @@
 
 import UIKit
 
+public typealias HTTPParameters  = [String:Any]?
+public typealias HTTPHeaders = [String:String]?
+
 public enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
@@ -18,5 +21,17 @@ public enum HTTPMethod: String {
 
 public enum HTTPTask {
     case request
-    case requestParametersAndHeaders(parameters: HTTPParameters, additionalHeaders: HTTPHeaders)
+    
+    case requestParameters(bodyParameters: HTTPParameters,
+        bodyEncoding: ParameterEncoding,
+        urlParameters: HTTPParameters)
+    
+    case requestParametersAndHeaders(bodyParameters: HTTPParameters,
+        bodyEncoding: ParameterEncoding,
+        urlParameters: HTTPParameters,
+        additionHeaders: HTTPHeaders)
+    
+    // case download, upload...etc
 }
+
+

@@ -8,15 +8,25 @@
 
 import UIKit
 
-enum AlbumService {
+enum AlbumAPI {
     case recomment(id: Int)
     case newMovies(page: Int)
     case video(id: Int)
-    case search(term: String)
+    case search(term: String)   
+    
 }
 
-extension AlbumService: HTTPNetworkRoute {
- 
+extension AlbumAPI: EndPointType {
+    
+    var httpMethod: HTTPMethod {
+        return .get
+    }
+    
+    var headers: HTTPHeaders {
+        return nil
+    }
+    
+
     var path: String {
         switch self {
         case .recomment(let id): return "\(id)/recommendations"
@@ -26,13 +36,6 @@ extension AlbumService: HTTPNetworkRoute {
         }
     }
     
-    var method: HTTPMethod {
-        return .get
-    }
-    
-    var headers: HTTPHeaders {
-        return nil
-    }
     
     var task: HTTPTask {
         switch self {
@@ -47,7 +50,7 @@ extension AlbumService: HTTPNetworkRoute {
                            "pagesize":"2",
                            "page":"\(page)"
                        ]
-            return .requestParametersAndHeaders(parameters:parameters, additionalHeaders: nil)
+            return .requestParameters(bodyParameters: nil, bodyEncoding: .urlEncoding, urlParameters: parameters)
             
         case .video(_):
             return .request
@@ -58,10 +61,8 @@ extension AlbumService: HTTPNetworkRoute {
                            "entity":"song",
                            "term":"\(term)"
                        ]
-            return .requestParametersAndHeaders(parameters:parameters, additionalHeaders: nil)
+            return .requestParameters(bodyParameters: nil, bodyEncoding: .urlEncoding, urlParameters: parameters)
         }
     }
     
-    
-    typealias ModelType = Album
 }

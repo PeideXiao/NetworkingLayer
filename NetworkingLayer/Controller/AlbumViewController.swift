@@ -9,15 +9,16 @@
 import UIKit
 import AVKit
 
-class ViewController: UIViewController {
+class AlbumViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     var albums:[Album] = []
-    var manager = AlbumServiceManager.shared
+    var manager = AlbumManager.shared
     var imageCached:[String: UIImage] = [:]
     var queue: OperationQueue = OperationQueue()
     var operatioinDict = [String: ImageOperation]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,10 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+
+
+extension AlbumViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.albums.count;
     }
@@ -108,7 +112,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
 }
 
-extension ViewController {
+
+extension AlbumViewController {
     
     func filePath(fileName: String) -> String {
         let path = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first!;
@@ -120,7 +125,6 @@ extension ViewController {
         return UIImage(contentsOfFile: filePath!);
     }
     
-    
     func filePath_archiver() {
         var documentDirectory = FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).first!;
         documentDirectory.appendPathComponent("music.mp3");
@@ -131,25 +135,22 @@ extension ViewController {
     
 }
 
-extension ViewController: UISearchBarDelegate {
+extension AlbumViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let text = searchBar.text else { return }
         
-        manager.getAlbums(text) { (results: Result<[Album]>) in
-            switch results {
-            case .success(let albums):
-                DispatchQueue.main.async {
-                    self.albums = albums
-                    self.tableView.reloadData();                }
-                
-            case .failure(let err):  print(err.localizedDescription)
+        manager.getAlbums(searchItem: text) { (albums, error) in
+            if let err = error { print(err.localizedDescription); return }
+            DispatchQueue.main.async {
+            self.albums = albums!
+            self.tableView.reloadData();
             }
         }
     }
 }
 
 
-extension ViewController: UIScrollViewDelegate {
+extension AlbumViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.searchBar.resignFirstResponder()
     }

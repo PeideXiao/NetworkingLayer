@@ -45,20 +45,5 @@ extension Question: Decodable {
 
 
 struct Wrapper<T: Decodable>: Decodable {
-//    var items:[T]
-    var results:[T]
-}
-
-struct ArrayWrapper<T: Decodable> : Decodable {
-    let data:[T]
-    let success:Bool
-    let userMessage: String
-    let developerMessage: String
-}
-
-struct DictWrapper<T: Decodable> : Decodable {
-    let data:[String:[T]]
-    let success:Bool
-    let userMessage: String
-    let developerMessage: String
+    var data:[T]
 }

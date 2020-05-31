@@ -16,16 +16,24 @@
 		046EF0232475BEF700125860 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EF0222475BEF700125860 /* placeholder.png */; };
 		04892676246B3FC300A1CBB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892675246B3FC300A1CBB9 /* AppDelegate.swift */; };
 		04892678246B3FC300A1CBB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892677246B3FC300A1CBB9 /* SceneDelegate.swift */; };
-		0489267A246B3FC300A1CBB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892679246B3FC300A1CBB9 /* ViewController.swift */; };
+		0489267A246B3FC300A1CBB9 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892679246B3FC300A1CBB9 /* AlbumViewController.swift */; };
 		0489267D246B3FC300A1CBB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0489267B246B3FC300A1CBB9 /* Main.storyboard */; };
 		0489267F246B3FC800A1CBB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0489267E246B3FC800A1CBB9 /* Assets.xcassets */; };
 		04892682246B3FC800A1CBB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04892680246B3FC800A1CBB9 /* LaunchScreen.storyboard */; };
 		04892693246B41A200A1CBB9 /* HTTPNetworkRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892692246B41A200A1CBB9 /* HTTPNetworkRoute.swift */; };
 		04892695246B423900A1CBB9 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892694246B423900A1CBB9 /* HTTPMethod.swift */; };
 		04892697246B432E00A1CBB9 /* HTTPNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892696246B432E00A1CBB9 /* HTTPNetworkError.swift */; };
-		04892699246B442B00A1CBB9 /* HTTPNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892698246B442B00A1CBB9 /* HTTPNetworkRequest.swift */; };
 		0489269B246B518E00A1CBB9 /* HTTPNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489269A246B518E00A1CBB9 /* HTTPNetworkResponse.swift */; };
-		0489269D246B538C00A1CBB9 /* URLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489269C246B538C00A1CBB9 /* URLEncoder.swift */; };
+		04C2404E24841159007B1E5C /* SMTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2404D24841159007B1E5C /* SMTestViewController.swift */; };
+		04C2405024841219007B1E5C /* MobleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2404F24841219007B1E5C /* MobleTheme.swift */; };
+		04C240522484125B007B1E5C /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C240512484125B007B1E5C /* Language.swift */; };
+		04C2405424841316007B1E5C /* LanguageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2405324841316007B1E5C /* LanguageAPI.swift */; };
+		04C24056248417F6007B1E5C /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C24055248417F6007B1E5C /* LanguageManager.swift */; };
+		04C2405924845816007B1E5C /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2405824845816007B1E5C /* EndpointType.swift */; };
+		04C2405E248458AE007B1E5C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2405B248458AE007B1E5C /* ParameterEncoding.swift */; };
+		04C2405F248458AE007B1E5C /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2405C248458AE007B1E5C /* URLParameterEncoding.swift */; };
+		04C24060248458AE007B1E5C /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2405D248458AE007B1E5C /* JSONParameterEncoder.swift */; };
+		04C240622484593D007B1E5C /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C240612484593D007B1E5C /* NetworkLogger.swift */; };
 		04D13353247D62AD008BCF74 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D13352247D62AD008BCF74 /* UIColor+Extension.swift */; };
 		04D13359247D89E8008BCF74 /* DateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D13358247D89E8008BCF74 /* DateHandler.swift */; };
 		04D1335C247DA2C5008BCF74 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1335B247DA2C5008BCF74 /* String+Extension.swift */; };
@@ -33,8 +41,8 @@
 		04D13360247DBF6B008BCF74 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1335F247DBF6B008BCF74 /* UIImage+Extension.swift */; };
 		04D13362247DE6C0008BCF74 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D13361247DE6C0008BCF74 /* UIView+Extension.swift */; };
 		04F56B7F246C956F00F2B52C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F56B7E246C956F00F2B52C /* User.swift */; };
-		04F56B81246C978900F2B52C /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F56B80246C978900F2B52C /* AlbumService.swift */; };
-		04F56B83246CAB9800F2B52C /* AlbumServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F56B82246CAB9800F2B52C /* AlbumServiceManager.swift */; };
+		04F56B81246C978900F2B52C /* AlbumAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F56B80246C978900F2B52C /* AlbumAPI.swift */; };
+		04F56B83246CAB9800F2B52C /* AlbumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F56B82246CAB9800F2B52C /* AlbumManager.swift */; };
 		04F56B85246CB58B00F2B52C /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F56B84246CB58B00F2B52C /* Album.swift */; };
 		F67715237119EEF99E03E28B /* Pods_NetworkingLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61AF23302F8E59E14D56DF0A /* Pods_NetworkingLayer.framework */; };
 /* End PBXBuildFile section */
@@ -50,7 +58,7 @@
 		04892672246B3FC300A1CBB9 /* NetworkingLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04892675246B3FC300A1CBB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04892677246B3FC300A1CBB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04892679246B3FC300A1CBB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04892679246B3FC300A1CBB9 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		0489267C246B3FC300A1CBB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0489267E246B3FC800A1CBB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04892681246B3FC800A1CBB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,9 +66,18 @@
 		04892692246B41A200A1CBB9 /* HTTPNetworkRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkRoute.swift; sourceTree = "<group>"; };
 		04892694246B423900A1CBB9 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		04892696246B432E00A1CBB9 /* HTTPNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkError.swift; sourceTree = "<group>"; };
-		04892698246B442B00A1CBB9 /* HTTPNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkRequest.swift; sourceTree = "<group>"; };
 		0489269A246B518E00A1CBB9 /* HTTPNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkResponse.swift; sourceTree = "<group>"; };
-		0489269C246B538C00A1CBB9 /* URLEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoder.swift; sourceTree = "<group>"; };
+		04C2404D24841159007B1E5C /* SMTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTestViewController.swift; sourceTree = "<group>"; };
+		04C2404F24841219007B1E5C /* MobleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobleTheme.swift; sourceTree = "<group>"; };
+		04C240512484125B007B1E5C /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		04C2405324841316007B1E5C /* LanguageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageAPI.swift; sourceTree = "<group>"; };
+		04C24055248417F6007B1E5C /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		04C2405824845816007B1E5C /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		04C2405B248458AE007B1E5C /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		04C2405C248458AE007B1E5C /* URLParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
+		04C2405D248458AE007B1E5C /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		04C240612484593D007B1E5C /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		04C47E1D24804C1D00704BB3 /* NetworkingLayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkingLayer.entitlements; sourceTree = "<group>"; };
 		04D13352247D62AD008BCF74 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		04D13358247D89E8008BCF74 /* DateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHandler.swift; sourceTree = "<group>"; };
 		04D1335B247DA2C5008BCF74 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -68,8 +85,8 @@
 		04D1335F247DBF6B008BCF74 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		04D13361247DE6C0008BCF74 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		04F56B7E246C956F00F2B52C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		04F56B80246C978900F2B52C /* AlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
-		04F56B82246CAB9800F2B52C /* AlbumServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumServiceManager.swift; sourceTree = "<group>"; };
+		04F56B80246C978900F2B52C /* AlbumAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumAPI.swift; sourceTree = "<group>"; };
+		04F56B82246CAB9800F2B52C /* AlbumManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumManager.swift; sourceTree = "<group>"; };
 		04F56B84246CB58B00F2B52C /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		61AF23302F8E59E14D56DF0A /* Pods_NetworkingLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94878187F53089FF9A9B6AC0 /* Pods-NetworkingLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingLayer.debug.xcconfig"; path = "Target Support Files/Pods-NetworkingLayer/Pods-NetworkingLayer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +143,7 @@
 		04892674246B3FC300A1CBB9 /* NetworkingLayer */ = {
 			isa = PBXGroup;
 			children = (
+				04C47E1D24804C1D00704BB3 /* NetworkingLayer.entitlements */,
 				04892689246B3FDD00A1CBB9 /* Controller */,
 				0489268D246B406300A1CBB9 /* Models */,
 				0489268A246B406300A1CBB9 /* Views */,
@@ -146,7 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				0489267B246B3FC300A1CBB9 /* Main.storyboard */,
-				04892679246B3FC300A1CBB9 /* ViewController.swift */,
+				04C2404D24841159007B1E5C /* SMTestViewController.swift */,
+				04892679246B3FC300A1CBB9 /* AlbumViewController.swift */,
 				04617A4724770F140054320C /* PlayerViewController.swift */,
 			);
 			path = Controller;
@@ -188,6 +207,8 @@
 			children = (
 				04F56B7E246C956F00F2B52C /* User.swift */,
 				04F56B84246CB58B00F2B52C /* Album.swift */,
+				04C2404F24841219007B1E5C /* MobleTheme.swift */,
+				04C240512484125B007B1E5C /* Language.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				0489268F246B40D800A1CBB9 /* HTTP */,
-				04892690246B40DF00A1CBB9 /* Encoding */,
+				04C2405A248458AE007B1E5C /* Encoding */,
 				04892691246B40E800A1CBB9 /* Service */,
 			);
 			path = Networking;
@@ -205,30 +226,35 @@
 		0489268F246B40D800A1CBB9 /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
-				04892692246B41A200A1CBB9 /* HTTPNetworkRoute.swift */,
+				04C2405824845816007B1E5C /* EndpointType.swift */,
 				04892694246B423900A1CBB9 /* HTTPMethod.swift */,
 				04892696246B432E00A1CBB9 /* HTTPNetworkError.swift */,
-				04892698246B442B00A1CBB9 /* HTTPNetworkRequest.swift */,
+				04892692246B41A200A1CBB9 /* HTTPNetworkRoute.swift */,
 				0489269A246B518E00A1CBB9 /* HTTPNetworkResponse.swift */,
+				04C240612484593D007B1E5C /* NetworkLogger.swift */,
 			);
 			path = HTTP;
-			sourceTree = "<group>";
-		};
-		04892690246B40DF00A1CBB9 /* Encoding */ = {
-			isa = PBXGroup;
-			children = (
-				0489269C246B538C00A1CBB9 /* URLEncoder.swift */,
-			);
-			path = Encoding;
 			sourceTree = "<group>";
 		};
 		04892691246B40E800A1CBB9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				04F56B80246C978900F2B52C /* AlbumService.swift */,
-				04F56B82246CAB9800F2B52C /* AlbumServiceManager.swift */,
+				04F56B80246C978900F2B52C /* AlbumAPI.swift */,
+				04F56B82246CAB9800F2B52C /* AlbumManager.swift */,
+				04C2405324841316007B1E5C /* LanguageAPI.swift */,
+				04C24055248417F6007B1E5C /* LanguageManager.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		04C2405A248458AE007B1E5C /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				04C2405B248458AE007B1E5C /* ParameterEncoding.swift */,
+				04C2405C248458AE007B1E5C /* URLParameterEncoding.swift */,
+				04C2405D248458AE007B1E5C /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 		5B58572B813AB5E7E67CDE80 /* Frameworks */ = {
@@ -366,27 +392,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F56B85246CB58B00F2B52C /* Album.swift in Sources */,
+				04C24056248417F6007B1E5C /* LanguageManager.swift in Sources */,
+				04C2405F248458AE007B1E5C /* URLParameterEncoding.swift in Sources */,
 				04D1335C247DA2C5008BCF74 /* String+Extension.swift in Sources */,
 				04617A4824770F140054320C /* PlayerViewController.swift in Sources */,
-				04892699246B442B00A1CBB9 /* HTTPNetworkRequest.swift in Sources */,
-				0489267A246B3FC300A1CBB9 /* ViewController.swift in Sources */,
+				0489267A246B3FC300A1CBB9 /* AlbumViewController.swift in Sources */,
 				04892697246B432E00A1CBB9 /* HTTPNetworkError.swift in Sources */,
-				0489269D246B538C00A1CBB9 /* URLEncoder.swift in Sources */,
-				04F56B83246CAB9800F2B52C /* AlbumServiceManager.swift in Sources */,
+				04F56B83246CAB9800F2B52C /* AlbumManager.swift in Sources */,
 				04892676246B3FC300A1CBB9 /* AppDelegate.swift in Sources */,
 				04D13360247DBF6B008BCF74 /* UIImage+Extension.swift in Sources */,
+				04C2404E24841159007B1E5C /* SMTestViewController.swift in Sources */,
 				045EF5BD247AC1160096E983 /* UIDevice+Extension.swift in Sources */,
+				04C2405E248458AE007B1E5C /* ParameterEncoding.swift in Sources */,
 				040F2AEF24786B9C00E46E50 /* PDPlayer.swift in Sources */,
 				04892693246B41A200A1CBB9 /* HTTPNetworkRoute.swift in Sources */,
+				04C24060248458AE007B1E5C /* JSONParameterEncoder.swift in Sources */,
 				0489269B246B518E00A1CBB9 /* HTTPNetworkResponse.swift in Sources */,
+				04C2405024841219007B1E5C /* MobleTheme.swift in Sources */,
 				04D1335E247DB52F008BCF74 /* NSMutableAttributedString+Extension.swift in Sources */,
+				04C2405424841316007B1E5C /* LanguageAPI.swift in Sources */,
+				04C240622484593D007B1E5C /* NetworkLogger.swift in Sources */,
 				046EF0202475AC1300125860 /* ImageOperation.swift in Sources */,
+				04C2405924845816007B1E5C /* EndpointType.swift in Sources */,
 				04D13359247D89E8008BCF74 /* DateHandler.swift in Sources */,
 				04892695246B423900A1CBB9 /* HTTPMethod.swift in Sources */,
 				04D13362247DE6C0008BCF74 /* UIView+Extension.swift in Sources */,
+				04C240522484125B007B1E5C /* Language.swift in Sources */,
 				04F56B7F246C956F00F2B52C /* User.swift in Sources */,
 				04892678246B3FC300A1CBB9 /* SceneDelegate.swift in Sources */,
-				04F56B81246C978900F2B52C /* AlbumService.swift in Sources */,
+				04F56B81246C978900F2B52C /* AlbumAPI.swift in Sources */,
 				04617A4A247713790054320C /* SandBoxHandler.swift in Sources */,
 				04D13353247D62AD008BCF74 /* UIColor+Extension.swift in Sources */,
 			);
@@ -533,6 +567,7 @@
 			baseConfigurationReference = 94878187F53089FF9A9B6AC0 /* Pods-NetworkingLayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NetworkingLayer/NetworkingLayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KP5C2HFX82;
 				INFOPLIST_FILE = NetworkingLayer/Info.plist;
@@ -552,6 +587,7 @@
 			baseConfigurationReference = B22C553D22E4BD478DAD7A13 /* Pods-NetworkingLayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NetworkingLayer/NetworkingLayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KP5C2HFX82;
 				INFOPLIST_FILE = NetworkingLayer/Info.plist;
