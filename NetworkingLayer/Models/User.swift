@@ -43,7 +43,6 @@ extension Question: Decodable {
     }
 }
 
-
 struct Wrapper<T: Decodable>: Decodable {
     var data:[T]
 }

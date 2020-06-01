@@ -10,8 +10,6 @@ import UIKit
 
 class SMTestViewController: UIViewController {
 
-    var languages = [Language]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
